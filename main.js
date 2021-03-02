@@ -19,9 +19,19 @@
 			console.log("Error in type");
 		}
 	}
-	function $(elem){
-		return document.querySelector(elem);
-	}
-function test(){
-	console.log("test");
+	
+//Возрастающий счётчик ###########################################
+function IncreasingСounter(target,startCount = 0,endCount,time,step) {
+	let t = Math.round(time / (endCount / step));
+	target.innerHTML = startCount;
+	let interval = setInterval(() => {
+	startCount = startCount + step;
+	target.innerHTML = startCount;
+	  if (n >= endCount) {
+		target.innerHTML = 4560;
+		clearInterval(interval);
+	  }else{
+		target.innerHTML = n;
+	  }
+	}, t);
 }
