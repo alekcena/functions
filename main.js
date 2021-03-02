@@ -19,3 +19,9 @@
 			console.log("Error in type");
 		}
 	}
+	function $(elem){
+		return document.querySelector(elem);
+	}
+function test(){
+	console.log("test");
+}
